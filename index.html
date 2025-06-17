@@ -4,7 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bhumi Kala | Business Analytics Portfolio</title>
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <style>
+    * {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -12,53 +17,89 @@
       line-height: 1.6;
       color: #333;
       background-color: #f9f9f9;
+      overflow-x: hidden;
     }
 
     header {
       background: linear-gradient(to right, #007ACC, #005f99);
       color: white;
-      padding: 2.5rem 1rem;
+      padding: 2rem 1rem;
       text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.6rem;
+      font-size: 2.4rem;
       font-weight: 600;
     }
 
     .contact-info {
       margin-top: 1rem;
-      font-size: 1rem;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 2rem;
-      font-weight: 500;
+      gap: 1rem;
+      animation: fadeIn 2s ease-in;
     }
 
     .contact-info a {
+      background-color: rgba(255, 255, 255, 0.15);
       color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
       text-decoration: none;
-      transition: color 0.3s ease;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
     }
 
     .contact-info a:hover {
-      color: #ffdd57;
-      text-decoration: underline;
+      background-color: #ffdd57;
+      color: #005f99;
+    }
+
+    .contact-info i {
+      margin-right: 6px;
     }
 
     section {
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
       max-width: 800px;
       margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 1s forwards;
+    }
+
+    section:nth-of-type(2) { animation-delay: 0.3s; }
+    section:nth-of-type(3) { animation-delay: 0.6s; }
+    section:nth-of-type(4) { animation-delay: 0.9s; }
+    section:nth-of-type(5) { animation-delay: 1.2s; }
+    section:nth-of-type(6) { animation-delay: 1.5s; }
+    section:nth-of-type(7) { animation-delay: 1.8s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     h2 {
       color: #007ACC;
       border-bottom: 2px solid #007ACC;
       padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.8rem;
     }
 
     a {
@@ -79,6 +120,11 @@
       text-decoration: none;
       border-radius: 4px;
       font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: #005f99;
     }
 
     ul {
@@ -86,11 +132,7 @@
     }
 
     footer {
-      text-align: center;
-      padding: 1.5rem;
-      background-color: #eaeaea;
-      font-size: 0.9rem;
-      color: #666;
+      display: none;
     }
   </style>
 </head>
@@ -99,11 +141,9 @@
 <header>
   <h1>Bhumi Kala</h1>
   <div class="contact-info">
-    <a href="mailto:kalabhumi2@gmail.com">kalabhumi2@gmail.com</a>
-    <span>|</span>
-    <a href="tel:+919111197241">+91 91111 97241</a>
-    <span>|</span>
-    <a href="https://linkedin.com/in/bhumi-kala-b92521238" target="_blank">LinkedIn</a>
+    <a href="mailto:kalabhumi2@gmail.com"><i class="fas fa-envelope"></i>kalabhumi2@gmail.com</a>
+    <a href="tel:+919111197241"><i class="fas fa-phone"></i>+91 91111 97241</a>
+    <a href="https://linkedin.com/in/bhumi-kala-b92521238" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
   </div>
 </header>
 
