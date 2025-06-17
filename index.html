@@ -24,18 +24,35 @@
     }
     nav {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
       max-width: 1000px;
       margin: auto;
     }
     nav h1 {
-      font-size: 1.8rem;
-      margin: 0;
+      font-size: 2rem;
+      margin: 0.5rem 0;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+    .contact-bar a {
+      color: #e0f2ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-bar a:hover {
+      text-decoration: underline;
     }
     .nav-links {
       display: flex;
       gap: 1rem;
+      margin-top: 0.5rem;
     }
     .nav-links a {
       color: white;
@@ -75,13 +92,6 @@
     ul {
       padding-left: 1.25rem;
     }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background-color: #eaeaea;
-      font-size: 0.9rem;
-      color: #666;
-    }
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -95,13 +105,9 @@
       margin-bottom: 1rem;
     }
     @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
       .nav-links {
         flex-wrap: wrap;
-        margin-top: 0.5rem;
+        justify-content: center;
       }
     }
   </style>
@@ -111,6 +117,11 @@
 <header>
   <nav>
     <h1>Bhumi Kala</h1>
+    <div class="contact-bar">
+      <a href="mailto:kalabhumi2@gmail.com">kalabhumi2@gmail.com</a>
+      <a href="tel:+919111197241">+91 91111 97241</a>
+      <a href="https://linkedin.com/in/bhumi-kala-b92521238" target="_blank">LinkedIn</a>
+    </div>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#education">Education</a>
@@ -183,9 +194,7 @@
 </section>
 
 <footer>
-  <p>&copy; 2025 Bhumi Kala. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
-
