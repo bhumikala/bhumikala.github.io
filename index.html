@@ -4,81 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bhumi Kala | Business Analytics Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
       color: #333;
       background-color: #f9f9f9;
     }
+
     header {
-      background-color: #007ACC;
+      background: linear-gradient(to right, #007ACC, #005f99);
       color: white;
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      padding: 2.5rem 1rem;
+      text-align: center;
     }
-    nav {
+
+    header h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      font-weight: 600;
+    }
+
+    .contact-info {
+      margin-top: 1rem;
+      font-size: 1rem;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 1000px;
-      margin: auto;
-    }
-    nav h1 {
-      font-size: 2rem;
-      margin: 0.5rem 0;
-    }
-    .contact-bar {
-      display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 1.5rem;
-      font-size: 0.95rem;
-      margin-bottom: 0.5rem;
-    }
-    .contact-bar a {
-      color: #e0f2ff;
-      text-decoration: none;
+      flex-wrap: wrap;
+      gap: 2rem;
       font-weight: 500;
     }
-    .contact-bar a:hover {
-      text-decoration: underline;
-    }
-    .nav-links {
-      display: flex;
-      gap: 1rem;
-      margin-top: 0.5rem;
-    }
-    .nav-links a {
+
+    .contact-info a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      transition: color 0.3s ease;
     }
-    .nav-links a:hover {
+
+    .contact-info a:hover {
+      color: #ffdd57;
       text-decoration: underline;
     }
+
     section {
-      padding: 2rem 1rem;
-      max-width: 900px;
+      padding: 3rem 1rem;
+      max-width: 800px;
       margin: auto;
     }
+
     h2 {
       color: #007ACC;
       border-bottom: 2px solid #007ACC;
       padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
     }
+
     a {
       color: #007ACC;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .button {
       background: #007ACC;
       color: white;
@@ -89,93 +80,56 @@
       border-radius: 4px;
       font-weight: bold;
     }
+
     ul {
       padding-left: 1.25rem;
     }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-    .project-card {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      margin-bottom: 1rem;
-    }
-    @media (max-width: 600px) {
-      .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #eaeaea;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <nav>
-    <h1>Bhumi Kala</h1>
-    <div class="contact-bar">
-      <a href="mailto:kalabhumi2@gmail.com">kalabhumi2@gmail.com</a>
-      <a href="tel:+919111197241">+91 91111 97241</a>
-      <a href="https://linkedin.com/in/bhumi-kala-b92521238" target="_blank">LinkedIn</a>
-    </div>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+  <h1>Bhumi Kala</h1>
+  <div class="contact-info">
+    <a href="mailto:kalabhumi2@gmail.com">kalabhumi2@gmail.com</a>
+    <span>|</span>
+    <a href="tel:+919111197241">+91 91111 97241</a>
+    <span>|</span>
+    <a href="https://linkedin.com/in/bhumi-kala-b92521238" target="_blank">LinkedIn</a>
+  </div>
 </header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>I am a Business Analytics undergraduate with hands-on experience in data analysis, visualization, and financial modeling through virtual internships with Tata Group, Goldman Sachs, Accenture, and PwC. Skilled in Excel, SQL, Python, and Power BI, I excel at transforming raw data into strategic insights that inform decision-making. My academic foundation is backed by certifications from Microsoft, Google, and IIM Ahmedabad, and I’ve demonstrated leadership through event coordination and cross-functional teamwork. I’m driven by curiosity and passionate about using analytics to solve real-world business problems.</p>
-</section>
-
-<section id="education">
+<section>
   <h2>Education</h2>
   <p><strong>BBA – Business Analytics</strong> (2023 – 2026)<br>
-    Medi-Caps University, Indore<br>
-    CGPA: 8.97 (Till 3rd Semester)</p>
+  Medi-Caps University, Indore<br>
+  CGPA: 8.97 (Till 3rd Semester)</p>
+
   <p><strong>High School Diploma</strong> (2023)<br>
-    The Emerald Heights International School, Indore</p>
+  The Emerald Heights International School, Indore</p>
 </section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <div><strong>Data Analysis:</strong><br> Excel, SQL</div>
-    <div><strong>Programming:</strong><br> Python, R</div>
-    <div><strong>Visualization:</strong><br> Power BI</div>
-    <div><strong>Soft Skills:</strong><br> Communication, Team Leadership, Problem Solving</div>
-  </div>
+<section>
+  <h2>About Me</h2>
+  <p>
+    I am a Business Analytics undergraduate with hands-on experience in data analysis, visualization, and financial modeling through virtual internships with Tata Group, Goldman Sachs, Accenture, and PwC. Skilled in Excel, SQL, Python, and Power BI, I excel at transforming raw data into strategic insights that inform decision-making. My academic foundation is backed by certifications from Microsoft, Google, and IIM Ahmedabad, and I’ve demonstrated leadership through event coordination and cross-functional teamwork. I’m driven by curiosity and passionate about using analytics to solve real-world business problems.
+  </p>
 </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="project-card">
-    <h3>Personal Portfolio Website</h3>
-    <p>Developed and deployed a responsive portfolio site using HTML and GitHub Pages to showcase resume, certifications, and academic profile.</p>
-    <a href="https://bhumikala.github.io" target="_blank">View Live Site</a>
-  </div>
-  <div class="project-card">
-    <h3>Customer Churn Analysis</h3>
-    <p>Built a churn prediction model using Python (Logistic Regression, Decision Trees); cleaned and analyzed customer data to improve retention insights.</p>
-  </div>
-  <div class="project-card">
-    <h3>Business Analysis & Process Management</h3>
-    <p>Completed a guided project on Coursera applying core business process improvement techniques.</p>
-    <a href="https://www.coursera.org/account/accomplishments/verify/F3QP2O62TINB" target="_blank">View Certificate</a>
-  </div>
+<section>
+  <h2>Resume</h2>
+  <a class="button" href="Bhumi_Kala_Resume.pdf" target="_blank">View Full Resume (PDF)</a>
 </section>
 
-<section id="certifications">
+<section>
   <h2>Certifications</h2>
   <ul>
     <li><a href="https://www.coursera.org/account/accomplishments/verify/B5VK81HIDJQZ" target="_blank">Business Intelligence (BI) Essentials – IBM</a></li>
@@ -186,15 +140,36 @@
   </ul>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:kalabhumi2@gmail.com">kalabhumi2@gmail.com</a></p>
-  <p>Phone: <a href="tel:+919111197241">+91 91111 97241</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/bhumi-kala-b92521238" target="_blank">bhumi-kala-b92521238</a></p>
+<section>
+  <h2>Skills</h2>
+  <ul>
+    <li><strong>Data Analysis:</strong> Excel, SQL</li>
+    <li><strong>Programming:</strong> Python, R</li>
+    <li><strong>Visualization:</strong> Power BI</li>
+    <li><strong>Soft Skills:</strong> Communication, Team Leadership, Problem Solving</li>
+  </ul>
 </section>
 
-<footer>
-</footer>
+<section>
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      <strong>Personal Portfolio Website</strong><br>
+      Developed and deployed a responsive portfolio site using HTML and GitHub Pages to showcase resume, certifications, and academic profile.<br>
+      <a href="https://bhumikala.github.io" target="_blank">View Live Site</a>
+    </li>
+    <li>
+      <strong>Customer Churn Analysis</strong><br>
+      Built a churn prediction model using Python (Logistic Regression, Decision Trees); cleaned and analyzed customer data to improve retention insights.
+    </li>
+    <li>
+      <strong>Business Analysis & Process Management</strong><br>
+      Completed a guided project on Coursera applying core business process improvement techniques. <br>
+      <a href="https://www.coursera.org/account/accomplishments/verify/F3QP2O62TINB" target="_blank">View Certificate</a>
+    </li>
+  </ul>
+</section>
 
 </body>
 </html>
+
